@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Đầu Tiên</title>
 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#111827;
+            color:white;
+        }
+
+        header{
+            background:#2563eb;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#1e40af;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .hero h1{
+            font-size:48px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:30px;
+        }
+
+        button{
+            padding:15px 30px;
+            font-size:18px;
+            border:none;
+            border-radius:8px;
+            background:#22c55e;
+            color:white;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#16a34a;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            padding:40px;
+        }
+
+        .card{
+            width:250px;
+            background:#1f2937;
+            padding:20px;
+            border-radius:10px;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        footer{
+            background:#000;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Website Của Anh</h1>
+</header>
+
+<nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Dịch vụ</a>
+    <a href="#">Liên hệ</a>
+</nav>
+
+<section class="hero">
+    <h1>Xin Chào 👋</h1>
+    <p>Đây là website HTML đầu tiên.</p>
+
+    <button onclick="hello()">Bấm vào đây</button>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h2>HTML</h2>
+        <p>Dùng để tạo cấu trúc website.</p>
+    </div>
+
+    <div class="card">
+        <h2>CSS</h2>
+        <p>Dùng để làm đẹp giao diện.</p>
+    </div>
+
+    <div class="card">
+        <h2>JavaScript</h2>
+        <p>Dùng để tạo hiệu ứng và chức năng.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Website Demo
+</footer>
+
+<script>
+function hello(){
+    alert("Xin chào! Cảm ơn anh đã bấm nút 😄");
+}
+</script>
+
+</body>
+</html>
